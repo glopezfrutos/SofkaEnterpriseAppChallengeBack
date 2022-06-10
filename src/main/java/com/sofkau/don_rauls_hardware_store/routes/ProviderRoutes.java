@@ -1,6 +1,7 @@
 package com.sofkau.don_rauls_hardware_store.routes;
 
 import com.sofkau.don_rauls_hardware_store.collection.Provider;
+import com.sofkau.don_rauls_hardware_store.model.ProviderDto;
 import com.sofkau.don_rauls_hardware_store.usecases.GetAllProvidersUseCase;
 import com.sofkau.don_rauls_hardware_store.usecases.PostProviderUseCase;
 import org.springframework.context.annotation.Bean;
@@ -23,13 +24,13 @@ public class ProviderRoutes {
                 ServerResponse
                         .ok()
                         .contentType(MediaType.APPLICATION_JSON)
-                        .body(BodyInserters.fromPublisher(getAllProvidersUseCase.get(), Provider.class)));
+                        .body(BodyInserters.fromPublisher(getAllProvidersUseCase.get(), ProviderDto.class)));
     }
 
 
     @Bean
     public RouterFunction<ServerResponse> postProvider(PostProviderUseCase postProviderUseCase) {
-        return route(POST("/api/v1/provider"), request -> request.bodyToMono(Provider.class)
+        return route(POST("/api/v1/provider"), request -> request.bodyToMono(ProviderDto.class)
                 .flatMap(provider -> postProviderUseCase.apply(provider))
                 .flatMap(result -> ServerResponse
                         .ok()
