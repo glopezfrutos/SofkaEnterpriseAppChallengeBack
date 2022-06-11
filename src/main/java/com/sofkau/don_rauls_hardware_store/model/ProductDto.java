@@ -9,5 +9,6 @@ public class ProductDto {
     private Long quantity;
     private Long min;
     private Long max;
+    private Long price;
     private boolean isActive;
 }

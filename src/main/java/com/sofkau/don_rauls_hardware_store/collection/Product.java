@@ -19,5 +19,7 @@ public class Product {
 
     private Long max;
 
+    private Long price;
+
     private boolean isActive;
 }
