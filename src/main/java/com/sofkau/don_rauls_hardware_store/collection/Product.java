@@ -13,7 +13,7 @@ public class Product {
 
     private String name;
 
-    private Long quantity;
+    private Long stockQuantity;
 
     private Long min;
 
