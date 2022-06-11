@@ -13,13 +13,13 @@ public class Product {
 
     private String name;
 
-    private Long stockQuantity;
+    private Integer stockQuantity;
 
-    private Long min;
+    private Integer min;
 
-    private Long max;
+    private Integer max;
 
-    private Long price;
+    private Double price;
 
     private boolean isActive;
 }

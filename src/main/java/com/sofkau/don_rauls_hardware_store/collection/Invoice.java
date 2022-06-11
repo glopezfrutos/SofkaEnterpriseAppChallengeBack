@@ -25,5 +25,5 @@ public class Invoice {
 
     private Set<ProductInInvoice> products;
 
-    private Long total;
+    private Double total;
 }

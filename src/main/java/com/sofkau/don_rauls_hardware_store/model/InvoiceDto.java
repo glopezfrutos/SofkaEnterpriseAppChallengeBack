@@ -13,6 +13,5 @@ public class InvoiceDto {
     private String clientName;
     private String seller;
     private Set<ProductInInvoice> products;
-    private Long total;
-
+    private Double total;
 }

@@ -1,5 +1,6 @@
 package com.sofkau.don_rauls_hardware_store.collection;
 
+import com.sofkau.don_rauls_hardware_store.model.ProductInInvoice;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -18,9 +19,9 @@ public class PurchaseOrder {
 
     private Date date;
 
-    private Provider provider;
+    private String providerId;
 
-    private Set<Product> products;
+    private String providerName;
 
-    private Long total;
+    private Set<ProductInInvoice> products;
 }

@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public class ProductInInvoice {
     private String name;
-    private Long quantity;
-    private Long price;
+    private Integer quantity;
+    private Double price;
 }
