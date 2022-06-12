@@ -1,6 +1,7 @@
 package com.sofkau.don_rauls_hardware_store.collection;
 
 import com.sofkau.don_rauls_hardware_store.model.ProductInInvoice;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -10,6 +11,7 @@ import java.util.Set;
 
 @Document
 @Data
+@AllArgsConstructor
 public class Invoice {
 
     @Id
