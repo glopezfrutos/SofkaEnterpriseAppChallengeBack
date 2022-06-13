@@ -1,11 +1,8 @@
-package com.sofkau.don_rauls_hardware_store.usecases;
+package com.sofkau.don_rauls_hardware_store.usecases.invoices;
 
 import com.sofkau.don_rauls_hardware_store.mapper.InvoiceMapper;
-import com.sofkau.don_rauls_hardware_store.mapper.ProductMapper;
 import com.sofkau.don_rauls_hardware_store.model.InvoiceDto;
-import com.sofkau.don_rauls_hardware_store.model.ProductDto;
 import com.sofkau.don_rauls_hardware_store.repository.IInvoiceRepository;
-import com.sofkau.don_rauls_hardware_store.repository.IProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

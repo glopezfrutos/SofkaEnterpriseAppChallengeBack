@@ -1,4 +1,4 @@
-package com.sofkau.don_rauls_hardware_store.usecases;
+package com.sofkau.don_rauls_hardware_store.usecases.invoices;
 
 import com.sofkau.don_rauls_hardware_store.mapper.InvoiceMapper;
 import com.sofkau.don_rauls_hardware_store.model.InvoiceDto;

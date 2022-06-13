@@ -1,4 +1,4 @@
-package com.sofkau.don_rauls_hardware_store.usecases;
+package com.sofkau.don_rauls_hardware_store.usecases.product;
 
 import com.sofkau.don_rauls_hardware_store.mapper.ProductMapper;
 import com.sofkau.don_rauls_hardware_store.model.ProductDto;

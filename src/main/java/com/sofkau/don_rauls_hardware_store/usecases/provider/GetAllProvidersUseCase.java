@@ -1,6 +1,5 @@
-package com.sofkau.don_rauls_hardware_store.usecases;
+package com.sofkau.don_rauls_hardware_store.usecases.provider;
 
-import com.sofkau.don_rauls_hardware_store.collection.Provider;
 import com.sofkau.don_rauls_hardware_store.mapper.ProviderMapper;
 import com.sofkau.don_rauls_hardware_store.model.ProviderDto;
 import com.sofkau.don_rauls_hardware_store.repository.IProviderRepository;

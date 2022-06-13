@@ -1,11 +1,8 @@
 package com.sofkau.don_rauls_hardware_store.routes;
 
-import com.sofkau.don_rauls_hardware_store.model.InvoiceDto;
 import com.sofkau.don_rauls_hardware_store.model.PurchaseOrderDto;
-import com.sofkau.don_rauls_hardware_store.usecases.GetAllInvoicesUseCase;
-import com.sofkau.don_rauls_hardware_store.usecases.GetAllPurchaseOrderUseCase;
-import com.sofkau.don_rauls_hardware_store.usecases.PostInvoiceUseCase;
-import com.sofkau.don_rauls_hardware_store.usecases.PostPurchaseOrderUseCase;
+import com.sofkau.don_rauls_hardware_store.usecases.purchaseorder.GetAllPurchaseOrderUseCase;
+import com.sofkau.don_rauls_hardware_store.usecases.purchaseorder.PostPurchaseOrderUseCase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;

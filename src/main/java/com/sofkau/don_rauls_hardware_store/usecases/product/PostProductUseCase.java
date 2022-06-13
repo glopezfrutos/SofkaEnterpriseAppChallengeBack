@@ -1,12 +1,8 @@
-package com.sofkau.don_rauls_hardware_store.usecases;
+package com.sofkau.don_rauls_hardware_store.usecases.product;
 
-import com.sofkau.don_rauls_hardware_store.collection.Product;
 import com.sofkau.don_rauls_hardware_store.mapper.ProductMapper;
-import com.sofkau.don_rauls_hardware_store.mapper.ProviderMapper;
 import com.sofkau.don_rauls_hardware_store.model.ProductDto;
-import com.sofkau.don_rauls_hardware_store.model.ProviderDto;
 import com.sofkau.don_rauls_hardware_store.repository.IProductRepository;
-import com.sofkau.don_rauls_hardware_store.repository.IProviderRepository;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
