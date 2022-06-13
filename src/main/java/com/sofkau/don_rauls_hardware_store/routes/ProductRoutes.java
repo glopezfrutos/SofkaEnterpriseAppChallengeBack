@@ -29,7 +29,7 @@ public class ProductRoutes {
     @Bean
     @RouterOperation(path = "/api/v1/product", produces = {
             MediaType.APPLICATION_JSON_VALUE},
-            beanClass = GetAllProductsUseCase.class, method = RequestMethod.GET, beanMethod = "apply",
+            beanClass = GetAllProductsUseCase.class, method = RequestMethod.GET, beanMethod = "get",
             operation = @Operation(operationId = "getProducts", responses = {
                     @ApiResponse(responseCode = "200", description = "successful operation",
                             content = @Content(schema = @Schema(implementation = Product.class)))}

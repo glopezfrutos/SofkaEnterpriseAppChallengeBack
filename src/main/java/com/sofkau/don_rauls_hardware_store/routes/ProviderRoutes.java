@@ -30,7 +30,7 @@ public class ProviderRoutes {
     @Bean
     @RouterOperation(path = "/api/v1/provider", produces = {
             MediaType.APPLICATION_JSON_VALUE},
-            beanClass = GetAllProvidersUseCase.class, method = RequestMethod.GET, beanMethod = "apply",
+            beanClass = GetAllProvidersUseCase.class, method = RequestMethod.GET, beanMethod = "get",
             operation = @Operation(operationId = "getProviders", responses = {
                     @ApiResponse(responseCode = "200", description = "successful operation",
                             content = @Content(schema = @Schema(implementation = Provider.class)))}
