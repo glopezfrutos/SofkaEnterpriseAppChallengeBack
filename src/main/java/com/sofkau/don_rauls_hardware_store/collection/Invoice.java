@@ -11,21 +11,14 @@ import java.util.Set;
 
 @Document
 @Data
-@AllArgsConstructor
 public class Invoice {
 
     @Id
     private String id;
-
     private Long invoiceNumber;
-
     private Date date;
-
     private String clientName;
-
     private String seller;
-
     private Set<ProductInInvoice> products;
-
     private Double total;
 }
