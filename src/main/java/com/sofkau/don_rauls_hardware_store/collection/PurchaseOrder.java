@@ -14,14 +14,9 @@ public class PurchaseOrder {
 
     @Id
     private String id;
-
     private Long orderNumber;
-
     private Date date;
-
     private String providerId;
-
     private String providerName;
-
     private Set<ProductInInvoice> products;
 }

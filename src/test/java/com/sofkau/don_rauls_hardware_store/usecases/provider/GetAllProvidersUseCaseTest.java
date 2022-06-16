@@ -31,8 +31,22 @@ class GetAllProvidersUseCaseTest {
 
     @Test
     void testAllGetAllProvidersUseCase() {
-        Provider provider1 = new Provider("123abc","John Lennon", "1st Street 123", "John@lennon.com", "1-123-456", true);
-        Provider provider2 = new Provider("123abc","Paul McCartney", "2st Street 234", "paul@mccartney.com", "1-123-456", true);
+        Provider provider1 = new Provider();
+        provider1.setId("123abc");
+        provider1.setName("John Lennon");
+        provider1.setAddress("1st Street 123");
+        provider1.setEMail("John@lennon.com");
+        provider1.setPhone("1-123-456");
+        provider1.setActive(true);
+
+        Provider provider2 = new Provider();
+        provider2.setId("234bcd");
+        provider2.setName("Paul McCartney");
+        provider2.setAddress("2st Street 234");
+        provider2.setEMail("paul@mccartney.com");
+        provider2.setPhone("1-123-456");
+        provider2.setActive(true);
+
 
         Mockito.when(repository.findAll()).thenReturn(Flux.just(provider1, provider2));
         Flux<ProviderDto> providerDtoFlux = useCase.get();

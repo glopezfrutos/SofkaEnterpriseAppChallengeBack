@@ -31,8 +31,23 @@ class GetAllProductsUseCaseTest {
 
     @Test
     void testAllProductsUseCase() {
-        Product product1 = new Product("123abc","Hammer", 5, 5, 10, 10.5, true);
-        Product product2 = new Product("234bcd","Drill", 1, 1, 100, 100.0, true);
+        Product product1 = new Product();
+        product1.setId("123abc");
+        product1.setName("Hammer");
+        product1.setStockQuantity(5);
+        product1.setMin(5);
+        product1.setMax(10);
+        product1.setPrice(10.5);
+        product1.setActive(true);
+
+        Product product2 = new Product();
+        product2.setId("234bcd");
+        product2.setName("Drill");
+        product2.setStockQuantity(1);
+        product2.setMin(1);
+        product2.setMax(100);
+        product2.setPrice(100.0);
+        product2.setActive(true);
 
         Mockito.when(repository.findAll()).thenReturn(Flux.just(product1, product2));
         Flux<ProductDto> productDtoFlux = useCase.get();

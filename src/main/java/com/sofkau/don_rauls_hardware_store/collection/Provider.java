@@ -7,19 +7,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 @Data
-@AllArgsConstructor
 public class Provider {
 
     @Id
     private String id;
-
     private String name;
-
     private String address;
-
     private String eMail;
-
     private String phone;
-
     private boolean isActive;
 }
