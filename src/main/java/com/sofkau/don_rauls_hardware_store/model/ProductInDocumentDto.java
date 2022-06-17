@@ -5,7 +5,8 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class ProductInInvoice {
+public class ProductInDocumentDto {
+    private String id;
     private String name;
     private Integer quantity;
     private Double price;

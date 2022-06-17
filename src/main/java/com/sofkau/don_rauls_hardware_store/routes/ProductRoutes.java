@@ -60,4 +60,6 @@ public class ProductRoutes {
                         )
                 .onErrorResume(e -> ServerResponse.status(HttpStatus.BAD_REQUEST).build()));
     }
+
+
 }
