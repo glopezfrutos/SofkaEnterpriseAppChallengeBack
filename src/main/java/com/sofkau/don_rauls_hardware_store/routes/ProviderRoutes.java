@@ -32,7 +32,7 @@ public class ProviderRoutes {
             MediaType.APPLICATION_JSON_VALUE},
             beanClass = GetAllProvidersUseCase.class, method = RequestMethod.GET, beanMethod = "get",
             operation = @Operation(operationId = "getProviders", responses = {
-                    @ApiResponse(responseCode = "200", description = "successful operation",
+                    @ApiResponse(responseCode = "200", description = "Successful operation",
                             content = @Content(schema = @Schema(implementation = Provider.class)))}
             ))
     public RouterFunction<ServerResponse> getAllProviders(GetAllProvidersUseCase getAllProvidersUseCase) {
@@ -48,8 +48,8 @@ public class ProviderRoutes {
     @RouterOperation(path = "/api/v1/provider", produces = {
             MediaType.APPLICATION_JSON_VALUE}, method = RequestMethod.POST, beanClass = PostProviderUseCase.class, beanMethod = "apply",
             operation = @Operation(operationId = "createProvider", responses = {
-                    @ApiResponse(responseCode = "201", description = "successful operation", content = @Content(schema = @Schema(implementation = Provider.class))),
-                    @ApiResponse(responseCode = "400", description = "Invalid Recipe details supplied")}
+                    @ApiResponse(responseCode = "201", description = "Successful operation", content = @Content(schema = @Schema(implementation = Provider.class))),
+                    @ApiResponse(responseCode = "400", description = "Invalid Provider details supplied")}
                     , requestBody = @RequestBody(content = @Content(schema = @Schema(implementation = Provider.class)))
             ))
     public RouterFunction<ServerResponse> postProvider(PostProviderUseCase postProviderUseCase) {

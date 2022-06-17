@@ -31,7 +31,7 @@ public class ProductRoutes {
             MediaType.APPLICATION_JSON_VALUE},
             beanClass = GetAllProductsUseCase.class, method = RequestMethod.GET, beanMethod = "get",
             operation = @Operation(operationId = "getProducts", responses = {
-                    @ApiResponse(responseCode = "200", description = "successful operation",
+                    @ApiResponse(responseCode = "200", description = "Successful operation",
                             content = @Content(schema = @Schema(implementation = Product.class)))}
             ))
     public RouterFunction<ServerResponse> getAllProducts(GetAllProductsUseCase getAllProductsUseCase) {
@@ -47,8 +47,8 @@ public class ProductRoutes {
     @RouterOperation(path = "/api/v1/product", produces = {
             MediaType.APPLICATION_JSON_VALUE}, method = RequestMethod.POST, beanClass = PostProductUseCase.class, beanMethod = "apply",
             operation = @Operation(operationId = "createProduct", responses = {
-                    @ApiResponse(responseCode = "201", description = "successful operation", content = @Content(schema = @Schema(implementation = Product.class))),
-                    @ApiResponse(responseCode = "400", description = "Invalid Recipe details supplied")}
+                    @ApiResponse(responseCode = "201", description = "Successful operation", content = @Content(schema = @Schema(implementation = Product.class))),
+                    @ApiResponse(responseCode = "400", description = "Invalid Product details supplied")}
                     , requestBody = @RequestBody(content = @Content(schema = @Schema(implementation = Product.class)))
             ))
     public RouterFunction<ServerResponse> postProduct(PostProductUseCase postProductUseCase) {
